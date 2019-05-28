@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="student" class="com.student.info.Student">
+        <property name="id" value="12"/>
+        <property name="name" value="mon"/>
+        <property name="marks">
+        	<list>
+        	<value>60</value>
+        	<value>70</value>
+        	<value>80</value>
+        	</list>
+        </property>
+        <property name="hobbies">
+        	<list>
+        	<value>reading books</value>
+        	<value>playing games</value>
+        	<value>watching tv</value>
+        	</list>
+        </property>
+        <property name="subjects">
+        	<set>
+        	<value>Java</value>
+        	<value>Operating System</value>
+        	<value>Dbms</value>
+        	<value>Operating System</value>
+        	</set>
+        </property>
+        	<property name="ranks">
+        	<map>
+        	<entry key="5" value="jack"></entry>
+        	<entry key="7" value="nick"></entry>
+        	<entry key="9" value="mike"></entry>
+        	</map>
+        </property>
+        	<property name="mobileno">
+        	<props>
+            <prop key="8096789834"></prop>
+            <prop key="8074322799"></prop>
+            </props>
+        </property>
+        </bean>
+        </beans>
